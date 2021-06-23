@@ -12,8 +12,11 @@ Tutorial to setup OpsRamp integration with Microsoft Teams.
 ## Step 1 - Create an Azure AD Application
 
 1. Go to [portal.azure.com](https://portal.azure.com/) and sign in wih your developer tenant administrator account.
-1. Navigate to **Azure Active Directory**
-1. On the left menu, click **App registrations**
+1. Navigate to **Azure Active Directory**.
+1. On the left menu, click **App registrations**, the click **New registration**.
+![app-registrations](images/appregistrations.png)
+1. Set the **Application name** to `Teams Integration` or something similar.
+1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
 
 ## Reference Documentation
 
