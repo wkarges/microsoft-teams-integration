@@ -61,8 +61,23 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 1. In `ClientSecret`, set the **current value** to the **client secret** value from step 1.10.
 1. Click **Save**.
 
+## Step 3 - Obtaining your Access Token
+
+1. Right click the **Delegated** folder and select **Edit**
+1. Click the **Authorization** tab.
+    * Assuming you've correctly entered your credentials in the previous section, the default settings should all work.
+![postmanaccesstoken.png](images/postmanaccesstoken.png)
+1. Scroll down and click, **Get New Access Token**.
+1. An O365 login pop-up should appear, sign in with your developer tenant administrator account.
+1. Click **Proceed**, and then click the **Use Token** button.
+1. On the bottom right of the dialog, click **Update**.
+
+## Step 4 - Obtaining the necessary request parameters through Postman.
+
+1. 
+
 ## Reference Documentation
 
 * [Microsoft Graph in Postman](https://docs.microsoft.com/en-us/graph/use-postman).
 * [Send chatMessage in Teams Channel](https://docs.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0&tabs=http).
-* [Custom Integrations in OpsRamp](https://docs.opsramp.com/integrations/a2r/custom-integration/custom-integration/)
+* [Custom Integrations in OpsRamp](https://docs.opsramp.com/integrations/a2r/custom-integration/custom-integration/).
