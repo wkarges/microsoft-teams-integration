@@ -46,8 +46,20 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 8. Click **Grant admin consent for** and click **Yes**
     * *Note: If you are not logged in as an administrator you will need an Admin to login and grant consent.*
-9. In the left menu click **Overview**.  Here you can obtain your **Application (client)** and **Directory (tenant) IDs**.  Copy them down and store them somewhere secure, you will need them later.
-10. In the left menu, click **Certificates & Secrets**.  Click **New client secret**, enter a description, and click **Add**.  Again copy and securely store your `client secret`, you will need it.
+9. In the left menu click **Overview**.  Here you can obtain your **Application (client)** and **Directory (tenant) IDs**.  Copy them down and store them somewhere secure, you will need them in the next section.
+10. In the left menu, click **Certificates & Secrets**.  Click **New client secret**, enter a description, and click **Add**.  Again copy and securely store your `client secret`, you will need it in the next section.
+
+## Step 2 - Authenticate through Postman
+
+1. Fork the Postman collection labeled [Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
+1. Give your fork a unique label, this can be anything you want.
+1. **IMPORTANT** - Make sure you select **M365 Environment** in the top-right environment drop-down, not **No environment**.
+1. Click **Fork Environment**
+![forkenvironment.png](images/forkenvironment.png)
+1. In `ClientID`, set the **current value** to the **application (client) ID** from step 1.9.
+1. In `TenantID`, set the **current value** to the **directory (tenant) ID** from step 1.9.
+1. In `ClientSecret`, set the **current value** to the **client secret** value from step 1.10.
+1. Click **Save**.
 
 ## Reference Documentation
 
