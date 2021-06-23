@@ -16,7 +16,19 @@ Tutorial to setup OpsRamp integration with Microsoft Teams.
 1. On the left menu, click **App registrations**, the click **New registration**.
 ![app-registrations](images/appregistrations.png)
 1. Set the **Application name** to `Teams Integration` or something similar.
-1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
+1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback` and click **Register**.
+1. In the left menu, click **API Permissions**.
+1. Click **Add a permission**, select **Microsoft Graph**, then add permissions from the following table.
+    * *Note: I have not yet identified the minimum privileges required, this is simply the list I used to get the integration working*
+| Type        | Permissions Name  |
+| ------------- | ------------- |
+| Delegated | ChannelMessage.Edit |
+| Application | ChannelMember.Read.All |
+| Both | Channel.ReadBasic.All |
+| Both | ChannelMessage.Read.All |
+| Delegated | ChannelMessage.Send |
+| Application | ChannelSettings.Read.All |
+1.
 
 ## Reference Documentation
 
