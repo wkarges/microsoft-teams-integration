@@ -12,13 +12,13 @@ Tutorial to setup OpsRamp integration with Microsoft Teams.
 ## Step 1 - Create an Azure AD Application
 
 1. Go to [portal.azure.com](https://portal.azure.com/) and sign in wih your developer tenant administrator account.
-1. Navigate to **Azure Active Directory**.
-1. On the left menu, click **App registrations**, the click **New registration**.
+2. Navigate to **Azure Active Directory**.
+3. On the left menu, click **App registrations**, the click **New registration**.
 ![app-registrations](images/appregistrations.png)
-1. Set the **Application name** to `Teams Integration` or something similar.
-1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback` and click **Register**.
-1. In the left menu, click **API Permissions**.
-1. Click **Add a permission**, select **Microsoft Graph**, then add permissions from the following table.
+4. Set the **Application name** to `Teams Integration` or something similar.
+5. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback` and click **Register**.
+6. In the left menu, click **API Permissions**.
+7. Click **Add a permission**, select **Microsoft Graph**, then add permissions from the following table.
     * *Note: I have not yet identified the minimum privileges required, this is simply the list I used to get the integration working*
 	
 | Type        | Permissions Name  |
@@ -30,7 +30,8 @@ Tutorial to setup OpsRamp integration with Microsoft Teams.
 | Delegated | ChannelMessage.Send |
 | Application | ChannelSettings.Read.All |
 
-1.
+8. Click **Grant admin consent for** and click **Yes**
+    * *Note: If you are not logged in as an administrator you will need an Admin to login and grant consent.* 
 
 ## Reference Documentation
 
