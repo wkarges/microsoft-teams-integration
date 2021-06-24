@@ -76,15 +76,23 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
   In order to make posts to Microsoft Teams you'll need a Team Channel to post to.  In this tutorial we're going to create a new team and channel to post to but you can alternatively use an existing [Team](https://docs.microsoft.com/en-us/graph/teams-list-all-teams?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) & [Channel](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http).
 
-### Making requests from Postman
+### Create new Team
 
 1. Right click the **Delegated** folder and add a new folder, you can name it whatever you like.
 1. Right click on your folder and add a new `POST` request called **Create Team**.
     * **Make sure you change the request type to `POST`**
 	* Set the URL to `https://graph.microsoft.com/v1.0/teams`
 	* Deactivate the default `Content-Type` header and add a new one with `application/json` as the value.
-	    * | Content-Type | application/json |`
-	* Update the request Body to 
+	    * `| Content-Type | application/json |`
+	* Update the request Body to:
+	```
+	{
+	  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+	  "displayName": "<yourTeamName>",
+	  "description": "<yourTeamDescription>"
+	}
+	```
+	* Make sure you update the Team name and Description with your desired values.
 
 ## Reference Documentation
 
