@@ -81,7 +81,10 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 1. Right click the **Delegated** folder and add a new folder, you can name it whatever you like.
 1. Right click on your folder and add a new `POST` request called **Create Team**.
     * **Make sure you change the request type to `POST`**
-	* 
+	* Set the URL to `https://graph.microsoft.com/v1.0/teams`
+	* Deactivate the default `Content-Type` header and add a new one with `application/json` as the value.
+	`| Content-Type | application/json |`
+	* Update the request Body to 
 
 ## Reference Documentation
 
