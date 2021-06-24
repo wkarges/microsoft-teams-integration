@@ -202,7 +202,7 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 	  }
 	}
 	```
-	* Assuming it is you're finished!  From there you can fine tune the notification conditions and payload at your discretion.
+	* And you're finished!  From there you can fine tune the notification conditions and payload at your discretion.
 
 ## Reference Documentation
 
