@@ -185,9 +185,9 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 | Field | Value |
 | ----- | ----- |
 | Name | Teams sendChat |
-| End Point URL | https://graph.microsoft.com/v1.0/teams/`<your-team-id>`/channels/`<your-channel-id>`/messages |
+| End Point URL | `https://graph.microsoft.com/v1.0/teams/<your-team-id>/channels/<your-channel-id>/messages` |
 | Web Method | Post |
-| Headers |
+| Headers | *See Below* |
 | Content-Type | application/json |
 | Connection | keep-alive |
 
