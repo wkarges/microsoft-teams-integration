@@ -159,6 +159,8 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
  * **Azure Admin/Service Account Credentials** (username/password)
  * **TeamID/ChannelID** (from Section 4).
  
+### Integration Setup
+ 
 1. Within the OpsRamp Console go to **Setup** > **Integrations** > **Other** > **Custom Integration**
     * Name the integration **Microsoft Teams**
 	* Optionally enter a description.
