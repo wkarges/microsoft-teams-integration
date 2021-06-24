@@ -6,7 +6,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 * Must have (or know who has) administrative privileges within the Azure/O365 tenant associated with the desired Teams Environment.
     * *Must be using a Work or School O365 tenant, personal environments will no work.*
 	* *If you just need an account for testing purposes, you can sign up [here](https://developer.microsoft.com/en-us/microsoft-365/dev-program).*
-* Must obtain O365 admin credentials or setup an administrative service account and retain those credentials.
+* Must obtain Azure admin credentials or setup an administrative service account and retain those credentials.
 * Make sure you've signed into (and downloaded) the [Postman Desktop App](https://www.postman.com/).
 
 ## Step 1 - Create an Azure AD Application
@@ -146,6 +146,30 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 #### Validation
 ![teamschat.png](images/teamschat.png)
+
+Assuming your messages are posting correctly we're now ready to bring the integration into OpsRamp!
+
+## Step 6 - Integrating Teams with OpsRamp
+
+### Prerequisites
+
+In order to establish the integration between OpsRamp and Microsoft Teams, ensure you have the following items:
+ * **clientID** (from step 1.9).
+ * **clientSecret** (from step 1.10).
+ * **Azure Admin/Service Account Credentials** (username/password)
+ * **TeamID/ChannelID** (from Section 4).
+ 
+1. Within the OpsRamp Console go to **Setup** > **Integrations** > **Other** > **Custom Integration**
+    * Name the integration **Microsoft Teams**
+	* Optionally enter a description.
+	* Set the Category to **Collaboration** and the Direction to **Outbound**.
+	* Optionally add the [Microsoft Teams Logo](https://client-shared.s3.us-west-2.amazonaws.com/misc/logos/Microsoft_Office_Teams_(2018%E2%80%93present).svg.png).
+
+2. Inside the Integratoin Basic Configuration:
+    * Change the Notification Type to **REST API**
+	* Change the Authorization Type to **OAUTH2**
+	* Change the Grant Type to **Password Credentials**
+3. 
 
 
 ## Reference Documentation
