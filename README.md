@@ -164,7 +164,7 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 	* Optionally enter a description.
 	* Set the Category to **Collaboration** and the Direction to **Outbound**.
 	* Optionally add the [Microsoft Teams Logo](https://client-shared.s3.us-west-2.amazonaws.com/misc/logos/Microsoft_Office_Teams_(2018%E2%80%93present).svg.png).
-2. Update the Integratoin Basic Configuration:
+2. Update the **Integratoin Basic Configuration**:
     * Change the Notification Type to **REST API**
 	* Change the Authorization Type to **OAUTH2**
 	* Change the Grant Type to **Password Credentials**
@@ -180,7 +180,7 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 | Access Token URL | https://login.microsoftonline.com/7b10f5a5-efb2-492a-bdb4-de5c84e22eed/oauth2/v2.0/token |
 | Scope | https://graph.microsoft.com/.default |
 
-4. Add a new Integration Event and update the following fields:
+4. Add a new **Integration Event** and update the following fields:
 
 | Field | Value |
 | ----- | ----- |
