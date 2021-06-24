@@ -83,7 +83,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
     * **Make sure you change the request type to `POST`**
 	* Set the URL to `https://graph.microsoft.com/v1.0/teams`
 	* Deactivate the default `Content-Type` header and add a new one with `application/json` as the value.
-	`| Content-Type | application/json |`
+	    * | Content-Type | application/json |`
 	* Update the request Body to 
 
 ## Reference Documentation
