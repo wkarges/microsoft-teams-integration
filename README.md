@@ -84,6 +84,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 	* Set the URL to `https://graph.microsoft.com/v1.0/teams`
 	* Deactivate the default `Content-Type` header and add a new one with `application/json` as the value.
 	    * `| Content-Type | application/json |`
+	![createteamheaders.png](images/createteamheaders.png)
 	* Update the request Body to:
 	```
 	{
@@ -95,8 +96,57 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 	    * Make sure you update the Team name and Description with your desired values.
 3. **Send** the request and you should get a **202 Accepted** response status.
 4. Navigate to the response Headers and you should see a `Content-Location` header.  That header will contain your **TeamID**, make sure you copy this down and save it for later.
-    * Example: `| Content-Location | /teams('794b5e10-6a88-40e8-8405-3de94273b391') |`
+    * Example: `| Content-Location | /teams('**794b5e10-6a88-40e8-8405-3de94273b391**') |`
+
 ![createteam.png](images/createteam.png)
+
+### Create a new Channel
+
+1. Right click on your folder again and create another new `POST` request called **Create Channel**
+    * Again, make sure you change the type to `POST`.
+	* Set the URL to `https://graph.microsoft.com/v1.0/teams/{team-id}/channels` and update the `team-id` with the value from your previous call.
+	    * You can alternatively set the `{{team-id}} as a variable and add your `team-id` value to the M365 environment.
+	* Again, change the `Content-Type` header to `application/json`.
+	* Update the request Body:
+	```
+	{
+	  "displayName": "<yourChannelName>",
+	  "description": "<yourChannelDescription>",
+	  "membershipType": "standard"
+	}
+	```
+	* Make sure you update the **displayName** and **description** then **Send** the request.
+	   * You should get a **201 Created** Response status.
+2. In the response body you should see your **channel id**, make sure you copy this down for later use.
+
+![createchannel.png](images/createchannel.png)
+
+3. In your Microsoft Teams environment you should see the Team and Channel you've created.  You are now ready to message Teams.
+
+## Step 5 - Send chatMessage to Teams
+
+1. Create a new Request in your folder titled *Send chatMessage in Channel**
+2. Set the URL to `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/messages`
+    * Update the `team-id` and `channel-id` with the relevant values from your previous two requests.
+3. Change the `Content-Type` header to `application/json`.
+4. Update the request Body:
+```
+{
+  "body": {
+    "content": "Test Message."
+  }
+}
+```
+    * You don't need to update the content, we're just testing to ensure the integration works.
+5. **Send** the request and you should get a **201 Created** response code.
+    * Open your Teams application and verify the messages have been sent.
+
+#### Send chatMessage Request
+![sendchatmessage.png](images/sendchatmessage.png)
+
+#### Validation
+![teamschat.png](images/teamschat.png)
+
 
 ## Reference Documentation
 
