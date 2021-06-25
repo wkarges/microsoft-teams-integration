@@ -4,7 +4,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 ## Prerequisites
 
 * Must have (or know who has) administrative privileges within the Azure/O365 tenant associated with the desired Teams Environment.
-    * *Must be using a Work or School O365 tenant, personal environments will no work.*
+    * *Must be using a Work or School O365 tenant, personal environments will not work.*
 	* *If you just need an account for testing purposes, you can sign up [here](https://developer.microsoft.com/en-us/microsoft-365/dev-program).*
 * Must obtain Azure admin credentials or setup an administrative service account and retain those credentials.
 * Make sure you've signed into (and downloaded) the [Postman Desktop App](https://www.postman.com/).
@@ -96,7 +96,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 	    * Make sure you update the Team name and Description with your desired values.
 3. **Send** the request and you should get a **202 Accepted** response status.
 4. Navigate to the response Headers and you should see a `Content-Location` header.  That header will contain your **TeamID**, make sure you copy this down and save it for later.
-    * Example: `| Content-Location | /teams('**794b5e10-6a88-40e8-8405-3de94273b391**') |`
+    * Example: `| Content-Location | /teams('794b5e10-6a88-40e8-8405-3de94273b391') |`
 
 ![createteam.png](images/createteam.png)
 
@@ -105,7 +105,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 1. Right click on your folder again and create another new `POST` request called **Create Channel**
     * Again, make sure you change the type to `POST`.
 	* Set the URL to `https://graph.microsoft.com/v1.0/teams/{team-id}/channels` and update the `team-id` with the value from your previous call.
-	    * You can alternatively set the `{{team-id}}` as a variable and add your `team-id` value to the M365 environment.
+	    * You can alternatively set the `{{team-id}}` as a variable and add the value to the M365 environment.
 	* Again, change the `Content-Type` header to `application/json`.
 	* Update the request Body:
 	```
