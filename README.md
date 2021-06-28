@@ -11,7 +11,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 ## Step 1 - Create an Azure AD Application
 
-1. Go to [portal.azure.com](https://portal.azure.com/) and sign in wih your developer tenant administrator account.
+1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
 2. Navigate to **Azure Active Directory**.
 3. On the left menu, click **App registrations**, the click **New registration**.
 ![app-registrations](images/appregistrations.png)
@@ -105,7 +105,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 1. Right click on your folder again and create another new `POST` request called **Create Channel**
     * Again, make sure you change the type to `POST`.
 	* Set the URL to `https://graph.microsoft.com/v1.0/teams/{team-id}/channels` and update the `team-id` with the value from your previous call.
-	    * You can alternatively set the `{{team-id}}` as a variable and add the value to the M365 environment.
+	    * You can alternatively set `{{team-id}}` as a variable and add the value to the M365 environment.
 	* Again, change the `Content-Type` header to `application/json`.
 	* Update the request Body:
 	```
@@ -125,7 +125,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 ## Step 5 - Send chatMessage to Teams
 
-1. Create a new Request in your folder titled *Send chatMessage in Channel**
+1. Create a new Request in your folder titled **Send chatMessage in Channel**
 2. Set the URL to `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/messages`
     * Update the `team-id` and `channel-id` with the relevant values from your previous two requests.
 3. Change the `Content-Type` header to `application/json`.
@@ -168,7 +168,7 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 	* Optionally enter a description.
 	* Set the Category to **Collaboration** and the Direction to **Outbound**.
 	* Optionally add the [Microsoft Teams Logo](https://client-shared.s3.us-west-2.amazonaws.com/misc/logos/Microsoft_Office_Teams_(2018%E2%80%93present).svg.png).
-2. Update the **Integratoin Basic Configuration**:
+2. Update the **Integration Basic Configuration**:
     * Change the Notification Type to **REST API**
 	* Change the Authorization Type to **OAUTH2**
 	* Change the Grant Type to **Password Credentials**
