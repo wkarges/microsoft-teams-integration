@@ -47,7 +47,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 8. Click **Grant admin consent for** and click **Yes**
     * *Note: If you are not logged in as an administrator you will need an Admin to login and grant consent.*
 9. In the left menu click **Overview**.  Here you can obtain your **Application (client)** and **Directory (tenant) IDs**.  Copy them down and store them somewhere secure, you will need them in the next section.
-10. In the left menu, click **Certificates & Secrets**.  Click **New client secret**, enter a description, and click **Add**.  Again copy and securely store your `client secret`, you will need it in the next section.
+10. In the left menu, click **Certificates & Secrets**.  Click **New client secret**, enter a description, and click **Add**.  Again copy and securely store your **client secret**, you will need it in the next section.
 
 ## Step 2 - Authenticate through Postman
 
