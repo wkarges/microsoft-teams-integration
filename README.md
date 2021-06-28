@@ -74,7 +74,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 ## Step 4 - Obtaining the necessary request parameters through Postman.
 
-  In order to make posts to Microsoft Teams you'll need a Team Channel to post to.  In this tutorial we're going to create a new team and channel to post to but you can alternatively use an existing [Team](https://docs.microsoft.com/en-us/graph/teams-list-all-teams?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) & [Channel](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http).
+  In order to make posts to Microsoft Teams you'll need a Team Channel to post to.  In this tutorial we're going to create a new team and channel but you can alternatively use an existing [Team](https://docs.microsoft.com/en-us/graph/teams-list-all-teams?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) & [Channel](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http).
 
 ### Create new Team
 
@@ -130,6 +130,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
     * Update the `team-id` and `channel-id` with the relevant values from your previous two requests.
 3. Change the `Content-Type` header to `application/json`.
 4. Update the request Body:
+
 ```
 {
   "body": {
@@ -137,6 +138,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
   }
 }
 ```
+
     * You don't need to update the content, we're just testing to ensure the integration works.
 5. **Send** the request and you should get a **201 Created** response code.
     * Open your Teams application and verify the messages have been sent.
