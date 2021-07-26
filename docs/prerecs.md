@@ -39,7 +39,7 @@
 | Delegated | User.Read |
 | Application | User.Read.All |
 
-![app-permissions](images/apppermissions.png)
+![app-permissions](https://client-shared.s3.us-west-2.amazonaws.com/misc/apppermissions.png)
 
 8. Click **Grant admin consent for** and click **Yes**
     * *Note: If you are not logged in as an administrator you will need an Admin to login and grant consent.*
