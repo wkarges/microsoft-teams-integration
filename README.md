@@ -179,8 +179,8 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 | Base URI | https://graph.microsoft.com/v1.0 |
 | Key | `<yourClientID>` |
 | Secret | `<yourClientSecret>` |
-| User Name | <AzureUsername> |
-| Password | <AzurePassword> |
+| User Name | `<AzureUsername>` |
+| Password | `<AzurePassword>` |
 | Access Token URL | https://login.microsoftonline.com/7b10f5a5-efb2-492a-bdb4-de5c84e22eed/oauth2/v2.0/token |
 | Scope | https://graph.microsoft.com/.default |
 
