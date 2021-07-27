@@ -181,7 +181,7 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 | Secret | `<yourClientSecret>` |
 | User Name | `<AzureUsername>` |
 | Password | `<AzurePassword>` |
-| Access Token URL | https://login.microsoftonline.com/7b10f5a5-efb2-492a-bdb4-de5c84e22eed/oauth2/v2.0/token |
+| Access Token URL | https://login.microsoftonline.com/{{tenantID}}/oauth2/v2.0/token |
 | Scope | https://graph.microsoft.com/.default |
 
 4. Add a new **Integration Event** and update the following fields:
