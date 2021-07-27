@@ -11,7 +11,7 @@
 1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
 2. Navigate to **Azure Active Directory**.
 3. On the left menu, click **App registrations**, the click **New registration**.
-![app-registrations](images/appregistrations.png)
+![app-registrations](https://github.com/wkarges/microsoft-teams-integration/blob/main/images/appregistrations.png)
 4. Set the **Application name** to `Teams Integration` or something similar.
 5. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback` and click **Register**.
 6. In the left menu, click **API Permissions**.
