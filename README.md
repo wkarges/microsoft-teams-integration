@@ -8,7 +8,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 	* *If you just need an account for testing purposes, you can sign up [here](https://developer.microsoft.com/en-us/microsoft-365/dev-program).*
 * Must obtain Azure admin credentials or setup an administrative service account and retain those credentials.
 * Make sure you've signed into (and downloaded) the [Postman Desktop App](https://www.postman.com/).
-    * *To expedite the setup, you can download this [Postman Collection](https://www.getpostman.com/collections/ab36bd02b4dfe7897f52).
+    * *To expedite the setup, you can download this [Postman Collection](https://www.getpostman.com/collections/ab36bd02b4dfe7897f52).*
 
 ## Step 1 - Create an Azure AD Application
 
