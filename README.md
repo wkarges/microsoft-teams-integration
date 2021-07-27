@@ -192,8 +192,8 @@ In order to establish the integration between OpsRamp and Microsoft Teams, ensur
 | End Point URL | `https://graph.microsoft.com/v1.0/teams/<your-team-id>/channels/<your-channel-id>/messages` |
 | Web Method | Post |
 | Headers | *See Below* |
-| Content-Type | application/json |
-| Connection | keep-alive |
+| `Content-Type` | `application/json` |
+| `Connection` | `keep-alive` |
 
 5. It's up to you to customize the `On` conditions for sending the message, as well as the message `Payload`.
 6. Verify the Integration.
