@@ -38,6 +38,7 @@
 | Application | Teamwork.Migrate.All |
 | Delegated | User.Read |
 | Application | User.Read.All |
+| Both | Reports.Read.All |
 
 ![app-permissions](https://client-shared.s3.us-west-2.amazonaws.com/misc/apppermissions.png)
 
