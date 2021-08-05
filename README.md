@@ -9,6 +9,7 @@ Instructions to setup OpsRamp integration with Microsoft Teams.
 
 * Must obtain Azure admin credentials or setup an administrative service account and retain those credentials.
     * This user must have **Application administrator** and **Cloud application administrator** Administrative roles.
+	* This user must also have MFA disabled.  See [how to remove two factor authentication](https://docs.microsoft.com/en-us/answers/questions/49063/remove-two-factor-authenticator.html).
 
 * Make sure you've signed into (and downloaded) the [Postman Desktop App](https://www.postman.com/).
     * *To expedite the setup, you can download this [Postman Collection](https://www.getpostman.com/collections/ab36bd02b4dfe7897f52).*
